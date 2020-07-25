@@ -23,9 +23,9 @@ button.addEventListener("click",() => {
                 <p>${data.prec}% chances of rain</p>
                 <p>${data.loc}</p>
                 <p>Convert the temperature in</p>
-                <button id="C" class="show">In °C</button>
-                <button id="F" class="show">In °F</button>
-                <button id="K" class="show">In K</button>`;
+                <button id="C" class="show">°C</button>
+                <button id="F" class="show">°F</button>
+                <button id="K" class="show">K</button>`;
                 document.querySelector(".contimage").style.animation = "co2 5s 1";
                 document.querySelector(".contimage").innerHTML = `<img src = "types/${data.desc}.jpg">`;
                 
@@ -37,7 +37,7 @@ button.addEventListener("click",() => {
 })
 
 document.querySelector(".cont1").addEventListener("click",(e) => {
- if(e.target.textContent == "In °F")
+ if(e.target.textContent == "°F")
  {
    
     if(unit == "C")
@@ -54,7 +54,7 @@ document.querySelector(".cont1").addEventListener("click",(e) => {
     }
 
 }
-else if(e.target.textContent == "In °C")
+else if(e.target.textContent == "°C")
 {
     if(unit == "K")
     {
@@ -71,7 +71,7 @@ else if(e.target.textContent == "In °C")
 }
 
 
-else if(e.target.textContent == "In K")
+else if(e.target.textContent == "K")
 {
  if(unit == "C")
  {

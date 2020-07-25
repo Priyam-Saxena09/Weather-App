@@ -2,7 +2,7 @@ const request = require("request");
 const latlon = (address,call) => {
     const url1 = "https://api.mapbox.com/geocoding/v5/mapbox.places/" + address + ".json?access_token=pk.eyJ1IjoicHJpeWFtc2F4ZW5hIiwiYSI6ImNrYzM1dTJ6OTIzaHIyem5hOXBycmw1angifQ.81pXCVrCkUTX343SAbv2BQ";
 request({url:url1},(error,response) => {
-    const data = JSON.parse(response.body);
+    const data = response?JSON.parse(response.body):undefined;
     if(error)
     {
          call("Server is unable to connect geoservice",data);
@@ -23,6 +23,7 @@ request({url:url1},(error,response) => {
 const fore = (lat,lon,call) => {
 const url = "http://api.weatherstack.com/current?access_key=6e76cf088f5cd94e26ce4547f7e57dff&query=" + lat + "," + lon;
 request({url:url},(error,response) => {
+    const data = response?JSON.parse(response.body):undefined;
     if(error)
     {
          call(error,data);
