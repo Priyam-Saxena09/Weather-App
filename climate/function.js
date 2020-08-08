@@ -18,9 +18,9 @@ button.addEventListener("click",() => {
             {
                 temp = data.temperature;
                 document.querySelector(".cont1").style.animation = "co1 5s 1";
-                document.querySelector(".cont1").innerHTML = `<p>${data.desc}</p>
-                <b>${data.temperature}°C</b>
-                <p>${data.prec}% chances of rain</p>
+                document.querySelector(".cont1").innerHTML = `<p>Climate:${data.desc}</p>
+                <b>Temperature:${data.temperature}°C</b>
+                <p>Precipetation:${data.prec}% chances of rain</p>
                 <p>${data.loc}</p>
                 <p>Convert the temperature in</p>
                 <button id="C" class="show">°C</button>
@@ -43,13 +43,13 @@ document.querySelector(".cont1").addEventListener("click",(e) => {
     if(unit == "C")
     {
     temp = ((9/5)*temp)+32;
-    document.querySelector(".cont1 b").textContent = Math.round(temp) + "°F"; 
+    document.querySelector(".cont1 b").textContent = "Temperature:" + Math.round(temp) + "°F"; 
     unit = "F";
     }
     else if(unit == "K")
     {
        temp = ((temp-273.15)*(9/5))+32;
-       document.querySelector(".cont1 b").textContent = Math.round(temp) + "°F"; 
+       document.querySelector(".cont1 b").textContent = "Temperature:" + Math.round(temp) + "°F"; 
        unit = "F";
     }
 
@@ -59,13 +59,13 @@ else if(e.target.textContent == "°C")
     if(unit == "K")
     {
     temp = temp - 273.15;
-    document.querySelector(".cont1 b").textContent = Math.round(temp) + "°C";
+    document.querySelector(".cont1 b").textContent = "Temperature:" + Math.round(temp) + "°C";
     unit = "C";
     }
     else if(unit == "F")
     {
         temp = (temp - 32)*(5/9);
-        document.querySelector(".cont1 b").textContent = Math.round(temp) + "°C";
+        document.querySelector(".cont1 b").textContent = "Temperature:" + Math.round(temp) + "°C";
         unit = "C";
     }
 }
@@ -76,13 +76,13 @@ else if(e.target.textContent == "K")
  if(unit == "C")
  {
 temp = temp + 273;
-document.querySelector(".cont1 b").textContent = Math.round(temp) + "K";
+document.querySelector(".cont1 b").textContent = "Temperature:" + Math.round(temp) + "K";
 unit = "K";
  }
  else if(unit == "F")
  {
     temp = ((temp - 32)*(5/9)) + 273.15;
-    document.querySelector(".cont1 b").textContent = Math.round(temp) + "K";
+    document.querySelector(".cont1 b").textContent = "Temperature:" + Math.round(temp) + "K";
     unit = "K";
  }
 }
