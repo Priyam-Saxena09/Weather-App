@@ -5,12 +5,12 @@ request({url:url1},(error,response) => {
     const data = response?JSON.parse(response.body):undefined;
     if(error)
     {
-         call("Server is unable to connect geoservice",data);
+         call("Server is unable to connect geoservice.",undefined);
     }
     else if(JSON.stringify(data.features) == "[]")
     {
         const data = JSON.parse(response.body);
-        call("Not Found.Please search another location",data);
+        call("Not Found.Please search another location.",undefined);
     }
     else
     {    
@@ -23,20 +23,19 @@ request({url:url1},(error,response) => {
 const fore = (lat,lon,call) => {
 const url = "http://api.weatherstack.com/current?access_key=6e76cf088f5cd94e26ce4547f7e57dff&query=" + lat + "," + lon;
 request({url:url},(error,response) => {
-    const data = response?JSON.parse(response.body):undefined;
     if(error)
     {
-         call(error,data);
+         call(error,undefined);
     }
     else if(response.body.error)
     {
         const data = JSON.parse(response.body);
-         call(data.error.info,data);
+         call(data.error.info,undefined);
     }
     else
     {
         const data = JSON.parse(response.body);
-         call(undefined,data);
+        call(undefined,data);
     }
 })
 }

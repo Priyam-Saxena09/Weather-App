@@ -1,31 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate</title>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
     <link rel="icon" href="types/icon.png">
-</head>
-<body>
-    <img src = "SpecificDaringKakapo-size_restricted.gif">
-    <div class="cont">
-    <h1>Weather</h1>
-    <b>Type and search your Location(city or country) and get the weather</b>
-    <div>
-        <br/>
-    <input type = "text" placeholder="Enter your location">
-    <button id="search">Search</button>
+    <title>Climate</title>
+  </head>
+  <body style="background-image:url('stock-photo-panoramic-view-of-the-earth-sun-star-and-galaxy-sunrise-over-planet-earth-view-from-space-1188657682.jpg');">
+    <div class="d-flex flex-column justify-content-center align-items-center mb-5" style="width:110rem">
+        <div class="p-2 bd-highlight"><h1 class="display-2" style="color:lime;font-family: 'Spicy Rice', cursive;">Weather</h1></div>
+        <div class="p-2 bd-highlight mb-5"><b class="display-4" style="color:lime;font-family: 'Spicy Rice', cursive;">Type and search your Location(city or country) and get the weather</b></div>
+        <div class="p-2 bd-highlight mt-1"><div class="input-group mb-1">
+            <input type="text" style="width:41rem;" class="form-control" placeholder="Enter the Location" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-success" type="button" id="button-addon2">Search</button>
+            </div>
+          </div>
+        </div>
     </div>
+    <div class="d-flex flex-row justify-content-center align-items-center mb-1 ml-5" style="width:112rem">
+        <div class="p-2 bd-highlight"><div class="main d-flex flex-column justify-content-center align-items-center mb-3 ml-5" style="background: rgba(198, 200, 70, 0.664);">         
+          </div></div>
+        <div class="mx-5 bd-highlight image"></div>
     </div>
-    <div class="cont1">
-     <button id="C" class = "hide"></button>
-     <button id="F" class = "hide"></button>
-     <button id="K" class = "hide"></button>
-    </div>
-    <div class="contimage">
-       
-    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src = "function.js"></script>
-</body>
+  </body>
 </html>

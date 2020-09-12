@@ -5,7 +5,7 @@ const express = require("express");
 const app = express();
 const mainpath = path.join(__dirname,"climate");
 app.use(express.static(mainpath));
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 const desc = "";
 const temperature = "";
 const prec = "";
@@ -13,7 +13,7 @@ const loc = "";
 app.get("/getclimate",(req,res) => {
     if(!req.query.address)
     {
-        return;
+        return res.send({err:"Please Enter the Location"});;
     }
     const add = req.query.address;
     latlon(add,(err,dat) =>{

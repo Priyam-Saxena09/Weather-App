@@ -1,114 +1,44 @@
-body>img
-        {
-            width:100%;
-            opacity:0.5;
-        }
-        .cont
-        {
-            position: absolute;
-            top:13%;
-            left:32%;
-        }
-        .cont input
-        {
-            width:46%;
-            height:20px;
-        }
-        .cont button
-        {
-            height:29px;
-            width:11%;
-            background-color:darkslategrey;
-        }
-        .cont1
-        {
-            position: absolute;
-            top:44%;
-            left:32%;
-        }
-        @keyframes co1
-        {
-            0%
-            {
-                opacity:0%;
-            }
-            20%{
-                opacity: 0.2;
-            }
-            40%{
-                opacity: 0.4;
-            }
-            60%{
-                opacity: 0.6;
-            }
-            80%{
-                opacity: 0.8;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-        h1
-        {
-            font-size: 340%;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        .cont1 button
-        {
-            height:32px;
-            width:32%;
-            
-        }
-        p
-        {
-            font-size: 180%;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: lime;
-        }
-        b
-        {
-            font-size: 180%;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-        .contimage
-        {
-            position: absolute;
-            top:49%;
-            left:64%;
-            
-        }
-        @keyframes co2
-        {
-            0%
-            {
-                opacity:0%;
-            }
-            20%{
-                opacity: 0.2;
-            }
-            40%{
-                opacity: 0.4;
-            }
-            60%{
-                opacity: 0.6;
-            }
-            80%{
-                opacity: 0.8;
-            }
-            100%{
-                opacity: 1;
-            }
-        }
-        .contimage img
-        {
-            height:136px;
-            width:38%;
-        }
-        .hide
-        {
-            display: none;
-        }
-        .show
-        {
-            display:inline-block
-        }
+@keyframes co1
+{
+    0%
+    {
+        opacity:0%;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes co2
+{
+    0%
+    {
+        opacity:0%;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
